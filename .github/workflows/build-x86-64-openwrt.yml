@@ -165,7 +165,7 @@ jobs:
         with:
           name: toolchain-cache
           tag_name: toolchain-cache
-          token: ${{secrets.ACCESS_TOKEN}}
+          token: ${{secrets.GITHUB_TOKEN}}
           files: output/*
           body: OpenWrt 工具链缓存
 
