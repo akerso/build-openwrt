@@ -44,7 +44,7 @@ on:
       ip_address:
         description: '设置默认IP地址'
         required: false
-        default: '10.0.0.2'
+        default: '192.168.2.1'
 
       partsize:
         description: '设置rootfs大小'
@@ -165,7 +165,7 @@ jobs:
         with:
           name: toolchain-cache
           tag_name: toolchain-cache
-          token: ${{secrets.GITHUB_TOKEN}}
+          token: ${{secrets.ACCESS_TOKEN}}
           files: output/*
           body: OpenWrt 工具链缓存
 
