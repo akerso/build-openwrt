@@ -316,20 +316,13 @@ add_custom_packages() {
     git_clone https://github.com/ximiTech/msd_lite
     clone_all https://github.com/linkease/istore-ui
     clone_all https://github.com/linkease/istore luci
-
-    # 科学上网插件
-    clone_all https://github.com/fw876/helloworld
-    clone_all https://github.com/Openwrt-Passwall/openwrt-passwall-packages
-    clone_all https://github.com/Openwrt-Passwall/openwrt-passwall
-    clone_all https://github.com/Openwrt-Passwall/openwrt-passwall2
-    clone_dir https://github.com/vernesong/OpenClash luci-app-openclash
+    git_clone https://github.com/stackia/rtp2httpd/tree/a4b897b97fa890b290e6b609f4c06c48413436b3/openwrt-support/luci-app-rtp2httpd
+    git_clone https://github.com/stackia/rtp2httpd/tree/a4b897b97fa890b290e6b609f4c06c48413436b3/openwrt-support/rtp2httpd
 
     # Themes
     git_clone 18.06 https://github.com/kiddin9/luci-theme-edge
     git_clone 18.06 https://github.com/jerrykuku/luci-theme-argon
     git_clone 18.06 https://github.com/jerrykuku/luci-app-argon-config
-    clone_dir https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom luci-theme-infinityfreedom-ng
-    clone_dir https://github.com/haiibo/packages luci-theme-opentomcat
 
     # 晶晨宝盒
     clone_all lua https://github.com/ophub/luci-app-amlogic
