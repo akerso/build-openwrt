@@ -1,5 +1,6 @@
 name: build x86/64 openwrt
-
+permissions: write-all
+#开启写权限，防止无法上传到release
 on:
   workflow_call:
     inputs:
